@@ -39,7 +39,7 @@ export default defineConfig({
         theme_color: "#000000",
         background_color: "#000000",
         display: "standalone",
-        scope: "/kodewords/",
+        scope: "/",
         start_url: "/",
         icons: [
           {

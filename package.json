@@ -9,7 +9,7 @@
     "start": "tsx",
     "install:all": "npm install --workspace=frontend && npm install --workspace=server",
     "build": "npm run build --prefix frontend",
-    "deploy": "npm run build && git subtree push --prefix frontend/build origin gh-pages"
+    "deploy": "npm run build && wrangler pages deploy frontend/build"
   },
   "repository": {
     "type": "git",

@@ -2,7 +2,7 @@
   "name": "@kodewords/frontend",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://blendjam.github.io/kodewords/",
+  "homepage": "kodewords.sanketlamsal.com.np",
   "type": "module",
   "scripts": {
     "web": "vite",

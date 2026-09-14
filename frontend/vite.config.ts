@@ -3,9 +3,10 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 import tailwindcss from "@tailwindcss/vite";
+import { cloudflare } from "@cloudflare/vite-plugin";
 
 export default defineConfig({
-  base: "/kodewords/",
+  base: "/",
   build: {
     outDir: "build",
   },
@@ -20,6 +21,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    cloudflare(),
     tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
@@ -38,7 +40,7 @@ export default defineConfig({
         background_color: "#000000",
         display: "standalone",
         scope: "/kodewords/",
-        start_url: "/kodewords/",
+        start_url: "/",
         icons: [
           {
             src: "logo192.png",

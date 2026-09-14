@@ -30,7 +30,7 @@ export function FullScreenButton({ className }: { className?: string }) {
     <button
       className={`flex items-center justify-center w-6 h-6 rounded-lg bg-white border-gray-500 border-2 ${className}`}
       onClick={onButtonClick}>
-      <img className="w-4 h-4" src="/kodewords/assets/icon/fullscreen.png" />
+      <img className="w-4 h-4" src="/assets/icon/fullscreen.png" />
     </button>
   );
 }

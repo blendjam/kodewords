@@ -4,7 +4,7 @@ import { useWs } from "./hooks/wsContext";
 import { useRoomState } from "./state/roomState";
 import { ConnectionStatus } from "@kodewords/shared/types";
 
-const IMGPATH = "/kodewords";
+const IMGPATH = "";
 
 type AgentInfo = {
   count: number;

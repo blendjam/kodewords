@@ -2,19 +2,19 @@ import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 
 const assets = [
-  "/kodewords/texture.png",
-  "/kodewords/assets/agent/blue.png",
-  "/kodewords/assets/agent/gray.png",
-  "/kodewords/assets/agent/red.png",
-  "/kodewords/assets/bg/black.png",
-  "/kodewords/assets/bg/blue.png",
-  "/kodewords/assets/bg/gray.png",
-  "/kodewords/assets/bg/red.png",
-  "/kodewords/assets/card/black.png",
-  "/kodewords/assets/card/blue.png",
-  "/kodewords/assets/card/gray.png",
-  "/kodewords/assets/card/red.png",
-  "/kodewords/assets/icon/fullscreen.png",
+  "/texture.png",
+  "/assets/agent/blue.png",
+  "/assets/agent/gray.png",
+  "/assets/agent/red.png",
+  "/assets/bg/black.png",
+  "/assets/bg/blue.png",
+  "/assets/bg/gray.png",
+  "/assets/bg/red.png",
+  "/assets/card/black.png",
+  "/assets/card/blue.png",
+  "/assets/card/gray.png",
+  "/assets/card/red.png",
+  "/assets/icon/fullscreen.png",
 ];
 
 function AssetLoader() {

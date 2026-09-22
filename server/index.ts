@@ -3,7 +3,7 @@ import { config } from "./src/config";
 import { logger } from "./src/utils/logger";
 import { createWsServer } from "./src/ws/server";
 
-console.log("Server Started");
+console.log("Server Started!");
 
 const server = createServer();
 const wss = createWsServer(server);

@@ -29,7 +29,6 @@
   "homepage": "https://github.com/blendjam/kodewords#readme",
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.54.9",
-    "gh-pages": "^6.3.0",
     "wrangler": "^4.131.2"
   }
 }

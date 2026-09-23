@@ -31,7 +31,7 @@ export default defineConfig({
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,json,ttf,woff,woff2}"],
       },
-      includeAssets: ["favicon.ico", "robots.txt", "apple-touch-icon.png", "assets/**/*.*"],
+      includeAssets: ["favicon.ico", "robots.txt", "apple-touch-icon.png"],
       manifest: {
         name: "kodewords",
         short_name: "kodewords",

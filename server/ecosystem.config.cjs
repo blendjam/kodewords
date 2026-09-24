@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: "kodewords",
-      script: "/home/ubuntu/games/kodewords/index.js",
+      script: "/home/ubuntu/games/kodewords/index.mjs",
       cwd: "/home/ubuntu/games/kodewords/",
 
       instances: 1,

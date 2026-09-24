@@ -2,8 +2,8 @@ module.exports = {
   apps: [
     {
       name: "kodewords",
-      script: "./dist/index.js",
-      cwd: "/home/ubuntu/kodewords/server",
+      script: "/home/ubuntu/games/kodewords/server/dist/index.js",
+      cwd: "/home/ubuntu/games/kodewords/server",
       instances: 1,
       exec_mode: "fork",
       autorestart: true,
@@ -13,8 +13,8 @@ module.exports = {
         NODE_ENV: "production",
         PORT: 8080,
       },
-      error_file: "/home/ubuntu/kodewords/logs/error.log",
-      out_file: "/home/ubuntu/kodewords/logs/out.log",
+      error_file: "/home/ubuntu/games/kodewords/logs/error.log",
+      out_file: "/home/ubuntu/games/kodewords/logs/out.log",
       log_date_format: "YYYY-MM-DD HH:mm:ss Z",
       merge_logs: true,
     },

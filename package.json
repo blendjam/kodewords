@@ -11,6 +11,7 @@
     "build": "npm run build --prefix frontend",
     "build:server": "npm run build --prefix server",
     "deploy": "npx wrangler pages deploy frontend/build",
+    "deploy:pm2": "npm run build:server && pm2 start server/ecosystem.config.cjs",
     "preview": "npm run preview --workspace=frontend"
   },
   "repository": {

@@ -9,9 +9,9 @@
     "start": "tsx",
     "install:all": "npm install --workspace=frontend && npm install --workspace=server",
     "build": "npm run build --prefix frontend",
-    "build:server": "npm run build --prefix server",
     "deploy": "npx wrangler pages deploy frontend/build",
-    "deploy:pm2": "npm run build:server && pm2 start server/ecosystem.config.cjs",
+    "build:server": "npm run build --prefix server",
+    "deploy:server": "npm run deploy --prefix server",
     "preview": "npm run preview --workspace=frontend"
   },
   "repository": {

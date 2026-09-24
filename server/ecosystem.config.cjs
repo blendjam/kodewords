@@ -2,8 +2,8 @@ module.exports = {
   apps: [
     {
       name: "kodewords",
-      script: "/home/ubuntu/games/kodewords/server/index.js",
-      cwd: "/home/ubuntu/games/kodewords/server",
+      script: "/home/ubuntu/games/kodewords/index.js",
+      cwd: "/home/ubuntu/games/kodewords/",
 
       instances: 1,
       exec_mode: "fork",

@@ -30,6 +30,7 @@ export class RoomManager {
 
     const timer = this.emptyRoomTimers.get(uniqueId);
     if (timer) {
+      logger.info("Clear Timer", { roomId });
       clearTimeout(timer);
       this.emptyRoomTimers.delete(roomId);
     }

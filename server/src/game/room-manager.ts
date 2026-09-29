@@ -80,8 +80,10 @@ export class RoomManager {
   }
 
   private scheduleRoomDeletion(id: string) {
-    if (this.emptyRoomTimers.has(id)) return;
-    logger.info("Schedule Room Delete", { roomId: id });
+    if (this.emptyRoomTimers.has(id)) {
+      logger.info("Already Scheduled for Deletion", { roomId: id });
+      return;
+    }
     const timer = setTimeout(() => {
       const room = this.rooms.get(id);
 
@@ -94,6 +96,7 @@ export class RoomManager {
       this.emptyRoomTimers.delete(id);
     }, ROOM_EMPTY_TIMEOUT);
 
+    logger.info("Schedule Room Delete", { roomId: id });
     this.emptyRoomTimers.set(id, timer);
   }
 

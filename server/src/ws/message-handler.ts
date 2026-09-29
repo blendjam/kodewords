@@ -71,7 +71,6 @@ function handleLeaveRoom(socket: WebSocket, message: Extract<ClientMessage, { ty
       payload: serializeRoom(room),
     }),
   );
-  logger.info("Leave Room", { userId: player.id, roomId: room.id });
 }
 
 export function handleMessage(socket: WebSocket, message: ClientMessage) {

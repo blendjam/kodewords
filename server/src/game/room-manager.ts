@@ -65,6 +65,8 @@ export class RoomManager {
 
     room.players.delete(playerId);
 
+    logger.info("Leave Room", { userId: playerId, roomId: room.id, roomSize: room.players.size });
+
     if (room.players.size === 0) {
       this.scheduleRoomDeletion(id);
     }
@@ -79,6 +81,7 @@ export class RoomManager {
 
   private scheduleRoomDeletion(id: string) {
     if (this.emptyRoomTimers.has(id)) return;
+    logger.info("Schedule Room Delete", { roomId: id });
     const timer = setTimeout(() => {
       const room = this.rooms.get(id);
 

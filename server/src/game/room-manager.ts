@@ -30,14 +30,15 @@ export class RoomManager {
 
     const timer = this.emptyRoomTimers.get(uniqueId);
     if (timer) {
-      logger.info("Clear Timer", { roomId });
+      logger.info("Clear Deletion Timer", { roomId: uniqueId });
       clearTimeout(timer);
-      this.emptyRoomTimers.delete(roomId);
+      this.emptyRoomTimers.delete(uniqueId);
     }
 
     for (const [existingRoomId, existingRoom] of this.rooms) {
       if (existingRoomId !== uniqueId) {
-        existingRoom.players.delete(player.id);
+        console.log("Existing room", existingRoom);
+        this.leaveRoom(existingRoomId, player.id);
       }
     }
 

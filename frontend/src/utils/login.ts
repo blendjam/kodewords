@@ -5,10 +5,10 @@ function getRandomID() {
   return `${Date.now()}-${Math.random().toString(36).slice(2)}`;
 }
 export function getUserId(): string {
-  let userId = sessionStorage.getItem("userId");
+  let userId = localStorage.getItem("kodewords-userId");
   if (!userId) {
     const randomUUID = getRandomID();
-    sessionStorage.setItem("userId", randomUUID);
+    localStorage.setItem("kodewords-userId", randomUUID);
     userId = randomUUID;
   }
   return userId;

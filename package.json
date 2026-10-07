@@ -9,7 +9,7 @@
     "start": "tsx",
     "install:all": "npm install --workspace=frontend && npm install --workspace=server",
     "build:frontend": "npm run build --prefix frontend",
-    "deploy:frontend": "npx wrangler pages deploy frontend/build",
+    "deploy:frontend": "npm run build:frontend && npx wrangler pages deploy frontend/build",
     "build": "npm run build --prefix server",
     "deploy": "npm run deploy --prefix server",
     "preview": "npm run preview --workspace=frontend"

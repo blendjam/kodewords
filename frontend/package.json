@@ -2,7 +2,7 @@
   "name": "@kodewords/frontend",
   "private": true,
   "version": "1.0.0",
-  "homepage": "kodewords.sanketlamsal.com.np",
+  "homepage": "kodewords.pages.dev",
   "type": "module",
   "scripts": {
     "web": "vite",
